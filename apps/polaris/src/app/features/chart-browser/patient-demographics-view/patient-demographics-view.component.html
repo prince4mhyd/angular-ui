@@ -1,0 +1,44 @@
+<div class="demographic">
+    <div class="demographicHeader">
+        <div class="flex">
+            <img [src]="getPatientPhotoSrc()">
+            <div class="wrap-details">
+                <div class="patientName">{{currentPatient.dnFirstName}} {{currentPatient.dnMiddleName}}. {{currentPatient.dnLastName}}</div>
+                <div class="opacity">{{patientDateOfBirth}}, {{patientAge}}y {{patientSex(currentPatient.dnSex)}}</div>
+                <mat-divider></mat-divider>
+                <div class="flex">
+                    <div class="opacity">PT &nbsp;</div> <div>{{currentPatient.dnPersonNumber}} &nbsp;</div>
+                    <div class="opacity">CH &nbsp;</div> <div>{{currentPatient.chartNumber}} &nbsp;</div>
+                    <div class="opacity">SSN &nbsp;</div> <div>{{maskSsn(currentPatient.dnSSN)}} &nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="demographicBdoy">
+        <div class="demographic-title"> Demographics</div>
+        <div class="flex phone wrap-contact">
+            <i class="ion-ios-phone-portrait"></i>
+            <div class="wrap-phone-mail-addr">
+                <div *ngIf="currentPatient.dnMobilePhone">{{currentPatient.dnMobilePhone}} Mobile</div>
+                <div *ngIf="currentPatient.dnHomePhone">{{currentPatient.dnHomePhone}} Home</div>
+            </div>
+        </div>
+        <div class="emil flex wrap-contact">
+            <i class="ion-ios-mail-open"></i>
+            <div class="wrap-phone-mail-addr">
+               {{currentPatient.patientEmailDetails.email}}
+            </div>
+        </div>
+        <div class="address flex wrap-contact">
+            <i class="ion-ios-home"></i>
+            <div class="wrap-phone-mail-addr">
+                {{currentPatient.patientAddressDetails.address_line1}}
+                {{currentPatient.patientAddressDetails.address_line2}}
+                {{currentPatient.patientAddressDetails.city}}
+                {{currentPatient.patientAddressDetails.state}}
+                {{currentPatient.patientAddressDetails.country}}
+                {{currentPatient.patientAddressDetails.zip}}
+            </div>
+        </div>
+    </div>
+</div>

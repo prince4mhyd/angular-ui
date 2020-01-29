@@ -1,0 +1,13 @@
+<div class="chatcontrol">
+    <span *ngIf="show">
+            <input [autoFocus]="true" *ngIf="messages && messages[this.messages.length-1] && messages[this.messages.length-1].data && messages[this.messages.length-1].data.type && messages[this.messages.length-1].data.type === 'name'" name="chatbotInput" type="text"
+            onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" 
+            class="form-control chatinput" [(ngModel)]="message.content[0]" (keydown)="onKeydown($event)"/>
+            <input [autoFocus]="true" *ngIf="messages && messages[this.messages.length-1] && messages[this.messages.length-1].data && messages[this.messages.length-1].data.type && messages[this.messages.length-1].data.type === 'number'" name="chatbotInput" type="number"
+            onkeypress="return event.keyCode !== 69"
+            class="form-control chatinput" [(ngModel)]="message.content[0]" (keydown)="onKeydown($event)"/>
+            <input [autoFocus]="true" *ngIf="messages && messages[this.messages.length-1] && messages[this.messages.length-1].data && messages[this.messages.length-1].data.type && messages[this.messages.length-1].data.type === 'text'" name="chatbotInput" type="text"
+            class="form-control chatinput" [(ngModel)]="message.content[0]" (keydown)="onKeydown($event)"/>
+    </span>
+    <br><button *ngIf="show" class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
+</div>

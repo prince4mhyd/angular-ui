@@ -1,0 +1,21 @@
+<div class="care-team">
+    <div class="care-team-header">
+        <div class="team-icon"><i class="ion-md-people"></i></div>
+        <div class="title-section">
+            <div class="title">Care Team</div>
+            <div class="subtitle">{{ membersCount }} Members</div>
+        </div>
+    </div>
+    <div class="care-team-body" >
+        <mat-list role="list" *ngIf="membersCount !== 0">
+            <mat-list-item role="listitem" *ngFor="let item of careTeam">
+                <div>
+                    <div class="providerName">{{getProviderName(item.refDoctorId)}}</div>
+                    <div class="practice">{{getSpecialty(item.specialtyCode.toString())}}</div>
+                </div>
+                <div class="phoneNo">{{getProviderPhone(item.refDoctorId)}}</div>
+            </mat-list-item>
+        </mat-list>
+        <div *ngIf="membersCount === 0" class="team-message">No Active Care Team</div>
+    </div>
+</div>

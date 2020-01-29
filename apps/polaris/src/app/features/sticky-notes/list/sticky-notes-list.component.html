@@ -1,0 +1,32 @@
+<div class="stickyNote noteBackground body" >
+        <div *ngFor="let note of notesView" class="sticky-col">
+            <div>
+                <div class="note-body">
+                    <div>{{userName}} &nbsp; </div>
+                    <div>{{convertDateFormat(note.createStamp)}}</div>
+                </div>
+                <div *ngIf="selectedNote.noteSid === note.noteSid">
+                    <textarea #editArea [(ngModel)]="newEditNote" maxlength="250"></textarea>
+                    <div class="message" *ngIf="newEditNote === '' && showAlert">Note text cannot be empty.</div>
+                </div>
+              
+                <ng-container *ngIf="selectedNote.noteSid !== note.noteSid">
+                    <div class="overflow"  > {{note.body}} </div>
+                    <div align="right">
+                            <span matTooltip="Alexa play..." *ngIf="note.noteSid !== selectedId" (click)="onPlayStickyNote(note)" class="glyphicon glyphicon-play medium-margin"></span>
+                            <span matTooltip="Alexa stop" *ngIf="note.noteSid === selectedId" (click)="onPlayStopStickyNote()" class="glyphicon glyphicon-stop medium-margin"></span>                        
+                        <button (click)="selectedNote = note; newEditNote = note.body; isAddClicked = false" class="btn-background at-edit">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </ng-container>
+            </div>
+            <ng-container *ngIf="selectedNote.noteSid === note.noteSid">
+                <div>
+                    <button (click)="removeNote(note)" class="btn-background"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+                    <button class="btn-save-cancel" (click)="saveNote(note, newEditNote)">Save</button>
+                    <button class="btn-save-cancel" (click)="cancelEdit(); showAlert = false">Cancel</button>
+                </div>
+            </ng-container>
+        </div>
+</div>

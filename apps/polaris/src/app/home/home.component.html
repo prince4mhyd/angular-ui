@@ -1,0 +1,73 @@
+<mat-sidenav-container [hasBackdrop]= "false">
+    <mat-list-item>  
+        <div class="mat-sidenav-content">
+            <div class="sidenav">
+                <button class="btn btn-primary font-medium" (click)="toggle()" ><span
+                        class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    Patients</button>
+                    <!-- <button class="btn btn-primary font-medium" (click)="onVidyo()" ><span
+                        class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                    TeleVisit</button> -->
+                    
+            </div>
+        </div>
+    </mat-list-item>
+    <mat-sidenav #sidenav mode="over">
+        <div class="sidenav-item">
+                <pol-new-patients-search (OnClose)="close()"></pol-new-patients-search>
+            </div>
+    </mat-sidenav>
+        <div class="main">
+            <ul class="nav nav-tabs">
+                <li [ngClass]="{'active': isDashboard}">
+                    <div>
+                        <span (click)="redirectToDashboard()">
+                            <div class="entity-avatar avatar--customColor">
+                                DF
+                            </div>
+                            <span>
+                                <div class="title">David Ford MD</div>
+                                <div class="subtitle">Provider</div>
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li [ngClass]="{'active': !isDashboard}">
+                    <div *ngIf="patients; else no_data">
+                        <span><!-- (click)="redirectToPatient()"-->
+                            <div class="entity-avatar avatar--customColor" style="background-color: #8a7509;"
+                             [ngbPopover]="popContent" triggers="manual" #p1="ngbPopover" (click)="togglePopover(p1)"
+                             [autoClose]="'outside'" placement="bottom">
+                                {{ getPatientAvatar }}
+                            </div>
+                            <span>
+                                <div class="title">{{getPatientName(patients.resource)}}</div>
+                                <div class="subtitle">Patient</div>
+                            </span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="subtitle logout">
+                        <a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true">
+                            <span class="logout-text">Log-Out</span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <router-outlet *ngIf="patients && !isDashboard"></router-outlet>
+        </div>
+    </mat-sidenav-container>
+<ng-template #no_data>
+    <span class="selectPatient" (click)="toggle(); checkPatient()">
+        Select Patient</span>
+</ng-template>
+
+<ng-template #popContent>
+    <div class="popover-arrow"></div>
+    <!-- <pol-new-chart-browser></pol-new-chart-browser> -->
+</ng-template>
+<!-- <div class="live-chat">
+    <button class="btn btn-primary" (click)="onLiveChatClick($event)">LIVE CHAT<span class="glyphicon glyphicon-comment chat-icon"></span></button>
+</div> -->

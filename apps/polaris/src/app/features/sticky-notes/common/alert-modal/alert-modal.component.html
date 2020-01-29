@@ -1,0 +1,14 @@
+<div class="model">
+    <div class="model-header">
+        <h1>{{data.title}} </h1>
+    </div>
+    <div class="model-body">
+        <div mat-dialog-content>
+            <p>{{data.body}}</p>
+        </div>
+    </div>
+    <div class="model-footer">
+        <button class="btn-cancel"  (click)="onCancel()">Cancel</button>
+        <button class="btn-delete" mat-button (click)="onDelete()">Delete</button>
+    </div>
+</div>

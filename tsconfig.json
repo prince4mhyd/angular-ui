@@ -1,0 +1,41 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "app/*": [
+        "apps/polaris/src/app/*"
+      ],
+      "assets/*": [
+        "apps/polaris/src/assets/*"
+      ],
+      "environments/*": [
+        "apps/polaris/src/environments/*"
+      ],
+      "@polaris/features/*": [
+        "apps/polaris/src/app/features/*"
+      ],
+      "@polaris/api/interfaces": [
+        "libs/api/interfaces/src/index.ts"
+      ],
+      "@polaris/api/services": [
+        "libs/api/services/src/index.ts"
+      ],
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,38 @@
+<div class="body">
+  <div class="loginBox">
+    <div class="logo"></div>
+    <div class="login-body">
+      <div>
+        </div>
+        <form id="userLoginForm" method="POST" action="#" autocomplete="off">
+          <div class="group login-field--username">
+            <input id="usernameField" type="text" size="36" value="df" name="user_name" placeholder="Username" autocorrect="off" autocapitalize="off" autocomplete="off" onkeypress="return postOnReturn(event)" autofocus="" tabindex="0" required="">
+            <label for="usernameField">Username</label>
+            <div class="login-checkbox">
+              <label for="rememberID">Remember</label>
+              <input type="checkbox" id="rememberID" tabindex="1" name="remember_username" value="remember_username" checked="">
+            </div>
+          </div>
+          <div class="group">
+            <input id="legacyPassword" type="password" placeholder="Password" size="36" value="" name="legacy_password" autocorrect="off" autocapitalize="off" autocomplete="off" onkeypress="return postOnReturn(event)" tabindex="0" required="">
+            <label for="legacyPassword" class='label-ui'>Password</label>
+            <div class="forgot-password-link">
+              <a href="javascript:void(0)" onclick="openForgotPasswordModal();" tabindex="1">Forgot password?</a>
+            </div>
+          </div>
+          <div class="group login-field--id">
+            <input class="site-id" id="IDField" type="text" size="36" name="site_id" placeholder="Site ID" value="" autocorrect="off" autocapitalize="off" autocomplete="off" onkeypress="return postOnReturn(event)" tabindex="0" required="">
+            <label for="IDField">Site ID</label>
+          </div>
+          
+          <input id="clearSiteId" type="hidden" name="clearSiteId" value="">
+
+          <input type="submit" id="formSubmit" style="visibility: hidden;">
+
+        </form>
+    </div>
+    <div class="login-button">
+      <a class="loginButton" (click)="login()" title="Submit" tabindex="0">Login</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,203 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css');
+.mat-sidenav{
+    height: 100vh;
+    margin-left: 70px;
+    transition-duration: 1ms;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  } 
+  .mat-sidenav-content {
+    height: 100%;  
+    align-items: center;
+    justify-content: center;
+  }
+  .nav a{
+    margin:10px;
+  }
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 7rem;
+    background: linear-gradient(#5c7dab 0,#436e9a 15rem,#567b9e 80%,#4b749a 100%);
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 60px;
+    font-size: 28px; 
+    padding: 0 0 0 10px;
+  }
+  .u-flex--bottom {
+    margin-top: auto;
+  }
+   .icon, .icon--16, .icon--24 {
+    width: 3.2rem;
+    height: 3.2rem;
+    min-width: 3.2rem;
+    min-height: 3.2rem;
+    background-repeat: no-repeat;
+    background-size: 3.2rem 3.2rem;
+    background-position: center;
+    transition: all .25s ease-in-out;
+  }
+  .entity-avatar {
+  display: flex;
+  flex-flow: row nowrap;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 2rem;
+  font-weight: 300;
+  height: 4rem;
+  width: 4rem;
+  min-width: 4rem;
+  color: rgba(0,0,0,.5);
+  border-radius: 4rem;
+  border: .1rem solid rgba(0,0,0,.07);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  cursor: pointer;
+  }
+  
+  .font-medium{
+    white-space: normal;
+  }
+  .main>.nav-tabs>.active {
+    color: #1d242d;
+    cursor: default;
+  }
+  .main>.nav-tabs{
+    flex-grow: 1;
+    overflow: hidden;
+    color: rgba(29,36,45,.67);
+    background-color: #fff;
+    font-size: large;  
+    }
+    .main>.nav-tabs li{
+      padding: 10px;    
+    }
+    .nav-tabs li:nth-child(1) {
+      background-color: #e5e9ef;
+   }
+   .nav-tabs li:nth-child(3) {
+    background-color: #e5e9ef;
+    display: contents;
+ }
+  .main>.nav-tabs li span{
+  display: inline-block;
+  }
+  .main>.nav-tabs> .entity-avatar {
+  transition: all .5s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-animation: none;
+  animation: none;
+  box-shadow: none;
+  }
+  .avatar--customColor {
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  text-shadow: 0 0 0.1rem rgba(0,0,0,.2);
+  float: left;
+  }
+  
+  .title {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  }
+  .title+.subtitle {
+  display: block;
+  min-height: 1.5rem;
+  }
+  .subtitle {
+  font-size: 1.3rem;
+  opacity: .67;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1;
+  }
+  .logout{
+    background-color: #e5e9ef;
+    padding: 25px 10px;
+    float: right;
+  }
+  .mat-container{
+    overflow: initial!important;
+  }
+
+  .avatar--customColor{
+    background-color: rgb(206, 141, 141);
+    margin-right:7px;
+  }
+  
+  .mat-drawer-container{
+    position: initial;
+    overflow: initial;
+  }
+  .mat-drawer-backdrop{
+    height: 100vh;
+  }
+
+  .selectPatient{
+    padding: 10px;
+  }
+  .logout-text{
+    color: #000;
+    padding-left:5px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+  }
+  .logout .glyphicon-log-out {
+    font-size: 15px;
+}
+.logout span{
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+:host /deep/ .popover {
+  max-width: none !important;
+  display: block !important;
+  position: fixed !important;
+  left: auto !important;
+  border: none !important;
+}
+
+.popover-arrow {
+  position: absolute;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 11px solid #fff;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 167px;
+}
+
+.live-chat {
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.chat-icon{
+  padding-left: 3%;
+}

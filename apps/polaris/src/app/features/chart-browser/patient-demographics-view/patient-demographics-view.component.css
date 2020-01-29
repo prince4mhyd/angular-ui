@@ -1,0 +1,61 @@
+@import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
+
+.demographicHeader {
+    background-color: #3f88f7;
+    color: #fff;
+}
+.demographicHeader img {
+    width: 7.4rem;
+    height: 7.4rem;
+    object-fit: cover;
+    border-radius: 1.3rem;
+    padding: 8px;
+}
+.flex {
+    display: flex;
+}
+.wrap-details {
+    padding: 8px 5px;
+}
+mat-divider {
+    background: white;
+}
+.demographicBdoy {
+    padding: 10px;
+    color: rgba(91,107,127,.95);
+    opacity: 1;
+    border-bottom: 1px solid rgba(215, 219, 224, 0.95);
+}
+
+.demographic-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+}
+.wrap-contact {
+    padding-bottom: 1rem;
+}
+.wrap-contact i {
+    width: 30px;
+    text-align: center;
+    color: rgb(36, 129, 152);
+}
+.wrap-phone-mail-addr {
+    padding: 6px 0  0 5px;
+}
+.phone i {
+    font-size: 30px;
+}
+.emil i {
+    font-size: 20px;
+}
+.address i {
+    font-size: 20px;
+}
+.opacity {
+    opacity: .67;
+}
+.patientName {
+    font-weight: 600;
+    font-size: 1.6rem;
+}

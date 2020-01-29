@@ -1,0 +1,28 @@
+.float-right {
+  margin-left: 50%;
+  background-color:#6d862a94;
+  border-radius: 25px;
+}
+.float-left{
+   background-color:#b8cada;
+   border-radius: 25px;
+   padding: 5px;
+}
+.isReply{
+    padding-left: 10px;
+}
+.options{
+    margin: 10px 0 10px 0px;
+}
+.list-group-item{
+  border: 0px;
+}
+.datepicker {
+  border: none;
+}
+.content{
+  margin: 10px;
+}
+.name{
+  font-family: initial;
+}

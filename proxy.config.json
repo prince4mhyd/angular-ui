@@ -1,0 +1,17 @@
+{
+    "/api/local/clinical": {
+        "target": "http://localhost:1405",
+        "secure": false,
+        "pathRewrite": {"^/api/local/clinical" : ""}
+    },
+    "/api/local/chatbot": {
+        "target": "http://localhost:5000",
+        "secure": false,
+        "pathRewrite": {"^/api/local/chatbot" : ""}
+    },
+    "/api/local/fhir": {
+        "target": "http://localhost:44348",
+        "secure": false,
+        "pathRewrite": {"^/api/local/fhir" : ""}
+    }
+}

@@ -1,0 +1,90 @@
+
+
+.chartPanel {
+    max-height: 500px;
+    width: 380px;
+    overflow-y: scroll;
+}
+.chartHeader {
+    background-color: #1870f5!important;
+    height: 55px;
+    color: #fff;
+    text-align: center;
+}
+
+blockquote {
+    border: none !important;
+}
+
+:host /deep/ .mat-expansion-panel-body {
+    padding: 10px !important;
+}
+
+.noneMessage {
+    opacity: .67;
+    font-style: italic;
+    padding: 15px 0 10px 24px;
+}
+
+:host >>> .mat-expansion-panel-header {
+    height: 45px !important;
+    background-color: rgba(81,105,138,.05);
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: unset;
+    padding: 0 24px 0 10px;
+}
+
+.flex {
+    display: flex;
+}
+.subheader {
+    padding: 10px;
+    background-color: rgba(81,105,138,.05);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+    color: rgba(91,107,127,.95);
+    opacity: 1;
+    border-bottom: 1px solid rgba(215, 219, 224, 0.95);
+}
+
+.careTeamSection {
+    padding: 10px;
+}
+.team-icon i {
+    font-size: 25px;
+    color: green;
+    margin-right: .6rem;
+}
+.careTeamTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(91,107,127,.95);
+    opacity: 1;
+    letter-spacing: .07rem;
+    padding-top: 8px;
+}
+
+ul {
+    padding-left: 22px;
+    list-style: disc;
+}
+.providerName {
+    color: rgba(91,107,127,.95);
+    opacity: 1;
+    width: 200px;
+}
+
+.practice {
+    opacity: .67;
+    color: rgba(91,107,127,.95);
+    margin-left: auto;
+    font-style: italic;
+}
+.careTeamNone {
+    opacity: .67;
+    font-style: italic;
+    padding: 0px 0 0px 25px;
+}

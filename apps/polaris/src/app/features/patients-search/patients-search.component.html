@@ -1,0 +1,51 @@
+<div class="login-header heroes">
+    <h3 class="pat-heading">Patients</h3>
+    <div >
+        <mat-form-field>
+          <mat-select  class="select-option" [(ngModel)]="searchMode" disableRipple>
+            <!-- <mat-option (click)="searchPatient(); searchText = ''" value="patientid">ID</mat-option>
+            <mat-option (click)="searchPatient(); searchText = ''" value="name">Name</mat-option> -->
+            <mat-option value="patientid">ID</mat-option>
+            <mat-option value="name">Name</mat-option>
+          </mat-select>
+        </mat-form-field>
+       
+        <!-- <input [(ngModel)]="searchText" autofocus="" (ngModelChange)="searchPatient(searchText)"
+        placeholder="Patient Search..." type="search"> -->
+        <input [(ngModel)]="searchText" autofocus="" placeholder="Patient Search..." type="search">
+    </div>
+    <ul *ngIf="recentPatients && recentPatients.length" class="heroes">
+        <div class="list-items"><b>Recent</b></div>
+        <li *ngFor="let patient of recentPatients | filter : searchText; index as i" (click)="OnSelect(patient)" [class.selected]="patient.resource.id === selectedId">
+            <span [ngStyle] ="getRandomColor(i)" class="entity-avatar avatar--customColor">
+                {{ getPatientAvatar(patient.resource) }}
+            </span>
+            <span>
+                <div class="title">{{getPatientName(patient.resource)}}</div>
+            </span>
+            <span>
+                <label>PT #{{ (patient.resource.id.length >6)? (patient.resource.id | slice:0:10)+'..':(patient.resource.id) }}</label>
+            </span>
+            
+        </li>
+      </ul>
+  <ul *ngIf="patients && patients.length;else no_data" class="heroes">
+    <div class="list-items"><b>Results</b></div>
+    <li *ngFor="let patient of patients | filter : searchText; index as i" (click)="OnSelect(patient)" [class.selected]="patient.resource.id === selectedId">
+        <span [ngStyle] ="getRandomColor(i)" class="entity-avatar avatar--customColor">
+            {{ getPatientAvatar(patient.resource) }}
+        </span>
+        <span>
+            <div class="title">{{getPatientName(patient.resource)}}</div>
+        </span>
+        <span>
+            <label>PT #{{ (patient.resource.id.length >6)? (patient.resource.id | slice:0:10)+'..':(patient.resource.id) }}</label>
+        </span>
+        
+    </li>
+  </ul>
+</div>
+<ng-template #no_data>
+  <div class="list-items"><b>Results</b></div>
+  <span class="message">No Data Found</span>
+</ng-template>

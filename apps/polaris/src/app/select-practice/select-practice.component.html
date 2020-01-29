@@ -1,0 +1,23 @@
+
+<div class="body">
+  <div class="loginBox">
+    <div class="login-header">
+      <h3>Select Practice</h3>
+      <div>
+        <div id="noPracticeError" style="display:none" class="alert is-alert">Please select a practice.</div>
+      </div>
+      <input type="search" autofocus="" [(ngModel)]="searchText" (ngModelChange)="searchPractices(searchText)" placeholder="Filter practices" id="practiceFilter">
+    </div>
+    <div class="login-body practiceList">
+        <ul class="practiceList" *ngIf="practices && practices.length; else no_data">
+          <li *ngFor="let practice of practices" (click)="onSelect()" [class.selected]="practice.id === selectedId" >
+              <span>{{ practice.name }}</span>
+              
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<ng-template #no_data>
+  <span class="message">No Data Found</span>
+</ng-template>

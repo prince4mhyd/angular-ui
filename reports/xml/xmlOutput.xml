@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="56.663">
+ <testsuite name="Validate the sticky notes from UI to  Mongo DB" timestamp="2019-12-26T19:10:38" hostname="localhost" time="56.663" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validate the sticky notes from UI to  Mongo DB" name="Verify DB connection from UI and verify in Mongo DB" time="56.653" />
+ </testsuite>
+</testsuites>

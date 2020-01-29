@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span class="chat-button">
+            <i class="material-icons">chat</i>
+        </span>
+        <span>Live Chat</span>
+        <span class="cancel" (click)="onDialogClose()">
+            <i class="material-icons">cancel</i>
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-card *ngIf="messages && messages.length">
+    <mat-card-content>
+
+    </mat-card-content>
+</mat-card>
+<div class="txt-box">
+    <textarea rows="3" placeholder=" Type your message here and press enter to send or press send button."></textarea>
+</div>
+<div class="send-btn">
+    <button class="btn btn-primary font-medium send-button">Send</button>
+</div>

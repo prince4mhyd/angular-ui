@@ -1,0 +1,9 @@
+<!-- <nav>
+  
+<a routerLink="/login" routerLinkActive="active">Login</a>
+<a routerLink="/practises" routerLinkActive="active">Practise</a>
+</nav> -->
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet>

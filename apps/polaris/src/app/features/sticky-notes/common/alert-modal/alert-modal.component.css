@@ -1,0 +1,38 @@
+.model-header {
+    padding: 15px 15px 0 15px;
+    border-bottom: .1rem solid rgba(47, 46, 46, 0.15);
+}
+.model-header h1 {
+    font-size: 19px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+.model-body {
+    padding: 10px 15px 8px 15px;
+    height: 70px;
+}
+.model-footer {
+    display: flex;
+    justify-content: flex-end;
+    color: #136cfd;
+    background-color: rgba(0,0,0,.025);
+    border-top: .1rem solid rgba(47, 46, 46, 0.15);
+}
+.model {
+    overflow: none;
+}
+.btn-delete {
+    background: #136cfd;
+    color: white;
+}
+.btn-cancel {
+    background: rgba(0,0,0,.025);
+    border-left: .1rem solid rgba(47, 46, 46, 0.15);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    outline: 0;
+}
+button {
+    border-radius: 0;
+}

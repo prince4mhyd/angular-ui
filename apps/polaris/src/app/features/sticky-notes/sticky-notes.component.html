@@ -1,0 +1,254 @@
+<!-- <div class="sticky-body">
+    <div class="sticky-head-row">
+        <div>
+            <button class="btn btn-note"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></button>
+        </div>
+        <div>
+            <div class="sticky-header at-stickyHeader">Sticky Notes</div>
+            <div class="sub-text">&nbsp;{{notesCount}} items</div>
+        </div>
+        <div class="right-end">
+            <button title="Add Sticky Note" class="btn-add at-plusButton"
+                (click)="stickyList.cancelEdit(); stickyList.openDialog()"><i class="ion-ios-add"></i></button>
+        </div>
+    </div>
+    <div >
+        <pol-new-sticky-notes-list #stickyList (stickyNotesCount)= "stickyNotesCount($event)"></pol-new-sticky-notes-list>
+        <div *ngIf="notesCount === 0" class="message">No Sticky Notes</div>
+    </div>
+</div> -->
+<mat-accordion>
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Patient Demographics:
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="card card-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Name</label>
+                    <div class="col-sm-8">{{getPatientName(demographics)}}</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Sex</label>
+                    <div class="col-sm-8">{{demographics?.gender}}</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">PID</label>
+                        <div class="col-sm-8">{{demographics?.id}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">SSN</label>
+                        <div class="col-sm-8">XXXXX1234</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">DOB</label>
+                    <div class="col-sm-8">{{demographics?.birthDate}}</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">External ID</label>
+                        <div class="col-sm-8">1234</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Vitals
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+        <div class="card card-body" *ngIf="patientVitals && patientVitals?.length">
+            <div class="row margin-padding-zero" *ngFor="let patientVital of patientVitals;">
+                <p class="bg-primary text-white padding-10px">
+                    <span>Encounter Id - {{patientVital?.encounter}}  &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>Date of Service:- {{getEncounterDetails(patientVital?.encounter)}}</span>
+                </p>
+                <div class="row" *ngFor="let vital of patientVital.vitals;">
+                    <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-8">
+                        <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">{{vital?.label}} ({{vital?.unit}})</label>
+                            <div class="col-sm-2">{{vital?.value}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-6">
+                        <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">BMI Status</label>
+                            <div class="col-sm-4">{{getBMIStatus(patientVital.vitals)}}</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Height (in)</label>
+                        <div class="col-sm-8">Male</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">BP Systolic (mmHg)</label>
+                        <div class="col-sm-8">Phone</div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">BP Diastolic (mmHg)</label>
+                        <div class="col-sm-8">123</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Pulse (per min)</label>
+                        <div class="col-sm-8">Male</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Respiration (per min)</label>
+                        <div class="col-sm-8">Phone</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Temperature (F)</label>
+                        <div class="col-sm-8">Name Lastname, firstname</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Oxygen Saturation (%)</label>
+                        <div class="col-sm-8">Male</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Head Circumference (in)</label>
+                        <div class="col-sm-8">Phone</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Waist Circumference (in)</label>
+                        <div class="col-sm-8">123</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label"> BMI (kg/m^2)</label>
+                        <div class="col-sm-8">Male</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">BMI Status (Type))</label>
+                        <div class="col-sm-8">Phone</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Other Notes</label>
+                        <div class="col-sm-8">123</div>
+                    </div>
+                </div>
+            </div>-->
+        </div> 
+    </mat-expansion-panel>
+    <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Medications
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+            <div class="card card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Title</label>
+                            <div class="col-sm-8">Name Lastname, firstname</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Coding</label>
+                            <div class="col-sm-8">Male</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Begin Date</label>
+                            <div class="col-sm-8">Phone</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">End Date</label>
+                            <div class="col-sm-8">123</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Occurrence</label>
+                            <div class="col-sm-8">Male</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Referred by</label>
+                            <div class="col-sm-8">Phone</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Comments</label>
+                            <div class="col-sm-8">123</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Outcome</label>
+                            <div class="col-sm-8">Male</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Destination</label>
+                            <div class="col-sm-8">Phone</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </mat-expansion-panel> -->
+  </mat-accordion>

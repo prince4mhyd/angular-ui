@@ -1,0 +1,30 @@
+<li class="list-group-item">
+    <div [ngClass]="{'float-right': message.isReply,'float-left': !message.isReply}">
+        <div class="content">
+            <span class="glyphicon glyphicon-user options " aria-hidden="true">
+                <span class ="isReply" *ngIf="message.isReply"><b class="name">David Ford MD:</b></span>
+                <span class ="isReply" *ngIf="!message.isReply"><b class="name">Chatbot:</b></span>
+            </span>
+            <div  *ngFor="let item of message.content">
+                {{item}}
+            </div>
+    
+            <mat-radio-group  *ngIf="message.data && message.data.data">
+                <mat-radio-button name = "messageData" *ngFor="let item of message.data.data;index as i"  [disabled]="message.isDisabled" [checked]="item === selectedOption" (click)="selectChatbotChecker(item, message, i)" value="item">{{item}}
+                    &nbsp;</mat-radio-button>
+            </mat-radio-group>
+            <div *ngIf="message.data && message.data.options === 'date'">
+                <mat-form-field>
+                    <input matInput readonly class="datepicker" (dateInput)="dateChanged($event)" [matDatepicker]="picker" placeholder="Choose a date"  [min]="minDate" [max]="maxDate" [disabled]="message.isDisabled">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div class="timeform">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="timestamp"> time: {{message.timestamp | date :
+                    'dd/MM/yyyy hh:mm:ss a' }}</span>
+            </div>
+        </div>
+    </div>
+</li>
+

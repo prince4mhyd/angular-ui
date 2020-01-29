@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="10" tests="15" time="40.954">
+ <testsuite name="Verify if the user is able to add a new sticky note" timestamp="2019-11-19T15:41:02" hostname="localhost" time="36.457" errors="0" tests="7" skipped="0" disabled="0" failures="6">
+  <testcase classname="Verify if the user is able to add a new sticky note" name="Validate if user is able to Login to polaris" time="4.864">
+   <failure type="exception" message="Failed: Cannot read property &apos;get&apos; of undefined"><![CDATA[TypeError: Cannot read property 'get' of undefined
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:39:101)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at fulfilled (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:107:62)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From asynchronous test: 
+Error
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:29:9)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at Suite.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:22:94)
+    at addSpecsToSuite (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Verify if the user is able to add a new sticky note" name="Verify if user is able to see Sticky Notes label" time="0.874">
+   <failure type="exception" message="Failed: Cannot read property &apos;get&apos; of undefined"><![CDATA[TypeError: Cannot read property 'get' of undefined
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:63:101)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at fulfilled (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:107:62)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From asynchronous test: 
+Error
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:44:9)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at Suite.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:22:94)
+    at addSpecsToSuite (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Verify if the user is able to add a new sticky note" name="Verify if user is able to see + icon" time="0.366" />
+  <testcase classname="Verify if the user is able to add a new sticky note" name="Verify if the user is able to see cancel button" time="0.003">
+   <failure type="exception" message="Failed: Cannot read property &apos;get&apos; of undefined"><![CDATA[TypeError: Cannot read property 'get' of undefined
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:86:79)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at UserContext.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:81:92)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\jasminewd2\index.js:112:25
+    at new Promise (<anonymous>)
+    at SimpleScheduler.promise (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+From asynchronous test: 
+Error
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:81:9)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at Suite.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:22:94)
+    at addSpecsToSuite (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Verify if the user is able to add a new sticky note" name="Verify if the user is able to see Save button" time="0.296">
+   <failure type="exception" message="Failed: No element found using locator: by.cssContainingText(&quot;.mat-button&quot;, &quot;Save&quot;)"><![CDATA[NoSuchElementError: No element found using locator: by.cssContainingText(".mat-button", "Save")
+    at elementArrayFinder.getWebElements.then (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:814:27)
+    at process._tickCallback (internal/process/next_tick.js:68:7)Error
+    at ElementArrayFinder.applyAction_ (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as isDisplayed] (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as isDisplayed] (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:831:22)
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:113:82)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at UserContext.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:107:90)
+From asynchronous test: 
+Error
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:107:9)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at Suite.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:22:94)
+    at addSpecsToSuite (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Verify if the user is able to add a new sticky note" name="Verify user is able to add a sticky note" time="30.002">
+   <failure type="exception" message="Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."><![CDATA[Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+    at Timeout._onTimeout (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Verify if the user is able to add a new sticky note" name="Verify if user is able to see the created sticky note in the stored data base" time="0.051">
+   <failure type="toBe" message="Expected &apos;Sticky body Edit037&apos; to be undefined."><![CDATA[Error: Failed expectation
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:155:39)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at fulfilled (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:107:62)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Validate if the user is able to edit the sticky note" timestamp="2019-11-19T15:41:39" hostname="localhost" time="1.318" errors="0" tests="5" skipped="0" disabled="0" failures="4">
+  <testcase classname="Validate if the user is able to edit the sticky note" name="Verify if the edit button is displayed" time="0.52" />
+  <testcase classname="Validate if the user is able to edit the sticky note" name="verify if user is able to see cancel button while editing " time="0.006">
+   <failure type="exception" message="Failed: Cannot read property &apos;get&apos; of undefined"><![CDATA[TypeError: Cannot read property 'get' of undefined
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:184:83)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at UserContext.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:179:103)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\jasminewd2\index.js:112:25
+    at new Promise (<anonymous>)
+    at SimpleScheduler.promise (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+From asynchronous test: 
+Error
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:179:9)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at Suite.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:163:95)
+    at addSpecsToSuite (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validate if the user is able to edit the sticky note" name="Verify if the user is able to see Save button" time="0.515">
+   <failure type="exception" message="Failed: Index out of bound. Trying to access element at index: 0, but there are only 0 elements that match locator By(css selector, .btn-save-cancel)"><![CDATA[NoSuchElementError: Index out of bound. Trying to access element at index: 0, but there are only 0 elements that match locator By(css selector, .btn-save-cancel)
+    at selenium_webdriver_1.promise.all.then (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:274:27)
+    at process._tickCallback (internal/process/next_tick.js:68:7)Error
+    at ElementArrayFinder.applyAction_ (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as isDisplayed] (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as isDisplayed] (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:831:22)
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:211:81)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at UserContext.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:205:90)
+From asynchronous test: 
+Error
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:205:9)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at Suite.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:163:95)
+    at addSpecsToSuite (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validate if the user is able to edit the sticky note" name="Verify user is able to edit sticky note" time="0.273">
+   <failure type="exception" message="Failed: Index out of bound. Trying to access element at index: 0, but there are only 0 elements that match locator By(css selector, .btn-save-cancel)"><![CDATA[NoSuchElementError: Index out of bound. Trying to access element at index: 0, but there are only 0 elements that match locator By(css selector, .btn-save-cancel)
+    at selenium_webdriver_1.promise.all.then (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:274:27)
+    at process._tickCallback (internal/process/next_tick.js:68:7)Error
+    at ElementArrayFinder.applyAction_ (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as click] (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as click] (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\built\element.js:831:22)
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:222:85)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at UserContext.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:218:84)
+From asynchronous test: 
+Error
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:218:9)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:110:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:106:16)
+    at Suite.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:163:95)
+    at addSpecsToSuite (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validate if the user is able to edit the sticky note" name="Verify if user is able to see the edited sticky note is stored in the data base" time="0.003">
+   <failure type="toBe" message="Expected &apos;Sticky body Edit037&apos; to be undefined."><![CDATA[Error: Failed expectation
+    at Object.<anonymous> (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\src\specs\stickynotes\stickynotes.spec.ts:241:39)
+    at step (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:136:27)
+    at Object.next (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:117:57)
+    at fulfilled (D:\Greenway-PolarisPOCLatest1119\UI\apps\polaris-e2e\node_modules\tslib\tslib.js:107:62)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Validate if user is able to delete the sticky Note" timestamp="2019-11-19T15:41:40" hostname="localhost" time="3.179" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validate if user is able to delete the sticky Note" name="Verify if the user is able to see delete button" time="0.641" />
+  <testcase classname="Validate if user is able to delete the sticky Note" name="Verify if user is able to delete the sticky note" time="1.037" />
+  <testcase classname="Validate if user is able to delete the sticky Note" name="Verify if user is  able to see the deleted sticky note  in the data base" time="0.002" />
+ </testsuite>
+</testsuites>

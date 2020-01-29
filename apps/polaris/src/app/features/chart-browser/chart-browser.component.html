@@ -1,0 +1,42 @@
+<div class="chartPanel">
+    <div class="chartHeader">
+        <blockquote>Chart Browser</blockquote>
+    </div>
+    <div class="chartBody">
+        <pol-new-patient-demographics-view></pol-new-patient-demographics-view>
+        <section>
+            <div>
+                <mat-accordion>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Sticky Notes ({{notesCount}})
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <pol-new-sticky-notes-list (stickyNotesCount)="stickyNotesCount($event)">
+                        </pol-new-sticky-notes-list>
+                        <div *ngIf="notesCount === 0" class="noneMessage">None</div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+        </section>
+        <div class="subheader">Overview</div>
+        <section class="careTeamSection">
+           <div class="flex">
+            <div class="team-icon"><i class="ion-md-people"></i></div>
+            <div class="careTeamTitle">Care Team</div>
+           </div>
+            <div>
+                <ul>
+                    <li *ngFor="let careTeam of careTeams">
+                        <div class="flex">
+                            <div class="providerName">{{getProviderName(careTeam.refDoctorId)}}</div>
+                            <div class="practice">{{getSpecialty(careTeam.specialtyCode.toString())}}</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div *ngIf="careTeamCount === 0" class="careTeamNone">None</div>
+        </section>
+    </div>
+</div>

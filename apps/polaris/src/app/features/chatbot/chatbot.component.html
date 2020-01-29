@@ -1,0 +1,8 @@
+<div>
+    <label class="assistant">Polaris Assistant</label>
+    <button (click)="close($event)" class="close-button"><i class="ion-md-close"></i></button>
+</div>
+<div class="chatform"  #scrollBottom [scrollTop]="scrollBottom.scrollHeight">
+    <pol-new-message-list [messages]="messages"></pol-new-message-list>
+    <pol-new-message-form [message]="message" [messages]="messages" (updateMessages)="messages=$event"></pol-new-message-form>
+</div>

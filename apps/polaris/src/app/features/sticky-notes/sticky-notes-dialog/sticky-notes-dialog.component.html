@@ -1,0 +1,14 @@
+<div class="model-header">
+    <h1 mat-dialog-content>David Ford, MD &nbsp;</h1>
+    <p mat-dialog-content>on {{date | date: 'MM/dd/yy'}}</p>
+</div>
+<div class="model-body">
+  <textarea #editArea  spellcheck="true" [(ngModel)]="newAddNote" maxlength="250"></textarea>
+  <div class="message" *ngIf="newAddNote === '' && showAlert">Note text cannot be empty.</div>
+</div>
+<div class="model-footer">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()">Save</button>
+  <button matTooltip="Alexa Listen me.."(click)="activateSpeechToText()" *ngIf="showSpeechButton" class="fa fa-microphone btn" aria-hidden="true"></button>
+  <button matTooltip="Stop Listening me.." (click)="deActivateSpeechToText($event); $event.stopPropagation()" *ngIf="!showSpeechButton" class="fa fa-stop btn" aria-hidden="true"></button>
+</div>

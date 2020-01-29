@@ -1,0 +1,38 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .toolbar-color {
+    background-color: #0f2673;
+  }
+
+  .cancel {
+      padding-left: 65%;
+      cursor: pointer;
+
+  }
+
+  .chat-button {
+      padding-right: 5%;
+      margin-right: 3%;
+  }
+
+  .txt-box {
+      padding-top: 6%;
+  }
+
+  textarea{
+    width:450px; 
+  }
+
+  .send-button {
+      float: right;
+  }
+
+  .send-btn {
+      padding-top: 10%;
+  }

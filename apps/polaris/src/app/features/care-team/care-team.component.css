@@ -1,0 +1,63 @@
+@import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
+
+
+.care-team {
+    width: 350px;
+    box-shadow: 0px 5px 10px 0.5px rgba(0, 0, 0, .3);
+    margin: 20px 0 0 20px;
+    border-radius: 3px;
+}
+.care-team-header {
+    display: flex;
+    border-top: .2rem solid #3f88f7;
+    border-radius: 3px;
+    padding-top: 7px;
+    border-bottom: .1rem solid rgba(0,0,0,.08);
+}
+.team-icon i {
+    color: #3f88f7;
+    font-size: 36px;
+    padding: 0 5px 0 12px;
+}
+ 
+.title-section {
+    padding-left: 6px;
+}
+.title {
+    font-weight: 600;
+    color: rgb(75, 74, 74);
+    font-size: 1.6rem;
+}
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #545151;
+}
+mat-list-item {
+    border-bottom: .1rem solid rgba(0,0,0,.08);
+}
+mat-list{
+    padding-top: 0px;
+}
+.team-message {
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: 1rem;
+    opacity: .67;
+}
+.phoneNo {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #1d242d;
+    margin-left: auto;
+}
+.practice {
+    opacity: .67;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+.providerName {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #545151;
+}
