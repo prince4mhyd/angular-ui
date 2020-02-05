@@ -10,7 +10,7 @@
         "pathRewrite": {"^/api/local/chatbot" : ""}
     },
     "/api/local/fhir": {
-        "target": "http://localhost:44348",
+        "target": "http://18.217.130.41/fhir-poc",
         "secure": false,
         "pathRewrite": {"^/api/local/fhir" : ""}
     }
